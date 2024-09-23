@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { throttle } from "../../../helpers/throttle";
 
 type WindowSize = {
@@ -22,14 +22,14 @@ export const useScreen = (): WindowSize & {
     height: 0,
   });
 
-  const handleWindowSizeChange = throttle(() => {
-    setSizes({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  }, 500);
-
   useEffect(() => {
+    const handleWindowSizeChange = throttle(() => {
+      setSizes({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }, 500)
+    
     handleWindowSizeChange();
 
     window.addEventListener("resize", handleWindowSizeChange);

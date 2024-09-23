@@ -44,3 +44,6 @@ export const SliderDot = memo(
     );
   },
 );
+
+
+SliderDot.displayName = "SliderDot";

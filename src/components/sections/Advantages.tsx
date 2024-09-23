@@ -33,7 +33,7 @@ export const Advantages = () => {
             <Image src={targetImage} alt="target" width={24} height={26} className="h-min self-center" />
             <p>
               Зручно розташовані 50 тренажерів з вільною вагою, та тренажери з
-              блинами на всі групи м'язів.
+              блинами на всі групи м&apos;язів.
             </p>
           </div>
           <div className="flex gap-4">

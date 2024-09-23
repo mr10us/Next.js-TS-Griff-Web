@@ -18,3 +18,5 @@ export const MenuButton = forwardRef<
     </button>
   );
 });
+
+MenuButton.displayName = "MenuButton"

@@ -63,8 +63,10 @@ export const useSlider = (
   useEffect(() => {
     if (sliderRef?.current === null) return;
 
+    const slider = sliderRef.current;
+
     const handleManyDotsScroll = () => {
-      const slider = sliderRef.current;
+      
 
       const scrollPosition = slider!.scrollLeft;
       const scrollWidth = slider!.scrollWidth;
@@ -83,9 +85,9 @@ export const useSlider = (
     };
     
     const handleDefaultScroll = () => {
-      const firstSlide = sliderRef.current?.firstElementChild;
+      const firstSlide = slider?.firstElementChild;
       const slideWidth = firstSlide?.clientWidth ?? 0;
-      const scrollLeft = sliderRef.current?.scrollLeft ?? 0;
+      const scrollLeft = slider?.scrollLeft ?? 0;
 
       setCurrentSlide(Math.round(scrollLeft / slideWidth));
     };
@@ -96,12 +98,12 @@ export const useSlider = (
         : handleDefaultScroll;
 
     const handleScroll = throttle(scrollHandler, SLIDER_THROTTLE);
-    sliderRef.current.addEventListener("scroll", handleScroll);
+    slider.addEventListener("scroll", handleScroll);
 
     return () => {
-      sliderRef.current?.removeEventListener("scroll", handleScroll);
+      slider.removeEventListener("scroll", handleScroll);
     };
-  }, [currentBreakPoint.slidesToShow]);
+  }, [currentBreakPoint.slidesToShow, sliderRef]);
 
   useEffect(() => {
     if (sliderRef?.current === null) return;
@@ -127,7 +129,7 @@ export const useSlider = (
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [breakpoints, sliderRef]);
 
   return {
     sliderRef,
