@@ -12,6 +12,7 @@ import { useSlider } from "./Slider.hooks";
 import { type TBreakpoint, type TSliderReturnType } from "./Slider.d";
 import { cn } from "@/lib/utils";
 import { calculateSlideToShow, renderDots } from "./Dots/_helper";
+import { Nav } from "./Nav";
 
 export const SliderContext = createContext<TSliderReturnType>(
   {} as TSliderReturnType,
@@ -41,8 +42,6 @@ const Slider = ({
   const breakpointSlides = sliderOptions.currentBreakPoint.slidesToShow;
   const slidesToShowOnBreakPoint = calculateSlideToShow(breakpointSlides);
 
-  console.log(sliderRef);
-
   if (!children) return null;
 
   return (
@@ -57,6 +56,10 @@ const Slider = ({
       >
         {children}
       </div>
+
+      {nav
+        ? <Nav />
+        : null}
       {dots
         ? renderDots(slidesCount, sliderOptions.currentSlide, breakpointSlides)
         : null}

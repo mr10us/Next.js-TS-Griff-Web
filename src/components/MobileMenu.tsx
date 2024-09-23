@@ -22,12 +22,12 @@ export const MobileMenu = () => {
       <MenuButton onClick={toggleDrawer} />
       {/* </DrawerTrigger> */}
       <DrawerTitle className="invisible" />
-      <DrawerDescription className="invisible"></DrawerDescription>
+      <DrawerDescription className="invisible" />
       <DrawerContent className="fixed inset-0 m-0 h-full w-full rounded-none bg-gray-950 p-6 outline-none">
         <NavList />
         <Button
           variant="ghost"
-          className="absolute right-4 top-4"
+          className="absolute right-4 top-8"
           onClick={toggleDrawer}
         >
           <Image src={closeMenuImage} alt="close burger menu icon" />

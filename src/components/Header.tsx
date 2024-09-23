@@ -24,12 +24,10 @@ export const Header: React.FC = () => {
       )}
     >
       <Logo size={logoSize} />
-
       {isTablet ? <MobileMenu /> : null}
       <div className="hidden lg:block">
         <NavList />
       </div>
-
       <Contacts />
     </header>
   );

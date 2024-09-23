@@ -20,7 +20,6 @@ const NextButton = (
   props: React.ComponentPropsWithoutRef<"button">,
 ): React.ReactElement => {
   const { scrollToNext, currentSlide, slidesCount } = useContext(SliderContext);
-  console.log(currentSlide, slidesCount)
   return (
     <NavButton handler={scrollToNext} {...props} disabled={currentSlide === slidesCount - 1}>
       <Image src={arrowIcon} alt="next button" className="rotate-180" />
