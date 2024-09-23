@@ -1,0 +1,43 @@
+.contact-container {
+  container-type: inline-size;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (width > 565px) {
+  @container (width < 260px) {
+    .contact-container > div {
+      display: none;
+    }
+    .contact-container > a {
+      display: flex !important;
+    }
+  }
+}
+
+.hero-overlay {
+  border-image: fill 1 linear-gradient(hsl(0 0% 0% / 0.6), hsl(0 0% 0% / 0.6));
+}
+.advantages-overlay {
+  border-image: fill 1
+    linear-gradient(hsla(342, 48%, 22%, 0.7), hsla(342, 48%, 22%, 0.7));
+}
+
+.bot-counter {
+  counter-reset: bot;
+}
+.bot-counter > * {
+  counter-increment: bot;
+}
+.bot-counter > *::before {
+  content: counter(bot);
+  width: 48px;
+  aspect-ratio: 1/1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  align-content: center;
+}
