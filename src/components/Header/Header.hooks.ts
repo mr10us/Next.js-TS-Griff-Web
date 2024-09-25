@@ -38,6 +38,6 @@ export const useHeaderHeight = (): number => {
     return () => {
       window.removeEventListener("resize", handleResize);
     }
-  }, [])
+  }, [context.headerRef]);
   return headerHeight;
 }
