@@ -47,9 +47,8 @@ const Slider = ({
   return (
     <SliderContext.Provider value={sliderContextValue}>
       <div
-        className={`grid snap-x snap-mandatory grid-flow-col gap-6 overflow-x-scroll overscroll-x-contain scroll-smooth`}
+        className={`slider-container grid snap-x snap-mandatory grid-flow-col gap-6 overflow-x-scroll overscroll-x-contain scroll-smooth`}
         style={{
-          scrollbarWidth: "none",
           gridAutoColumns: `${slidesToShowOnBreakPoint ? slidesToShowOnBreakPoint : slidesToShow}%`,
         }}
         ref={sliderRef}
@@ -57,9 +56,7 @@ const Slider = ({
         {children}
       </div>
 
-      {nav
-        ? <Nav />
-        : null}
+      {nav ? <Nav /> : null}
       {dots
         ? renderDots(slidesCount, sliderOptions.currentSlide, breakpointSlides)
         : null}
@@ -80,7 +77,7 @@ const SliderItem = memo(
             `flex min-w-full flex-shrink-0 snap-always`,
             props.className,
           )}
-          style={{scrollSnapAlign: breakPointAlign ? breakPointAlign : align}}
+          style={{ scrollSnapAlign: breakPointAlign ? breakPointAlign : align }}
         >
           {props.children}
         </div>

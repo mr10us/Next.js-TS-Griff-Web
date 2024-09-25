@@ -52,9 +52,9 @@ export const CoachesSlider = () => {
 
 const CoachesSliderItem = ({ image, title }: TCoachesSliderItemProps) => {
   return (
-    <>
+    <div className="flex flex-col gap-4 font-grotesk text-3xl text-white uppercase items-center">
       <Image src={image} alt={title} />
       <p>{title}</p>
-    </>
+    </div>
   );
 };

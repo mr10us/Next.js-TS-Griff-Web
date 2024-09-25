@@ -23,7 +23,7 @@
 }
 .advantages-overlay {
   border-image: fill 1
-    linear-gradient(hsla(342, 48%, 22%, 0.7), hsla(342, 48%, 22%, 0.7));
+    linear-gradient(hsl(342, 48%, 22%, 0.7), hsl(342, 48%, 22%, 0.7));
 }
 
 .bot-counter {
@@ -40,4 +40,13 @@
   border-radius: 50%;
   margin-bottom: 8px;
   align-content: center;
+}
+
+.slider-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+.slider-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }

@@ -1,14 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import background from "/public/background.png";
 import { Button } from "../ui/button";
+import { useHeaderHeight } from "../Header/Header.hooks";
 
 export const Hero = () => {
+  const headerHeight = useHeaderHeight();
+
   return (
     <section
-      style={{ backgroundImage: `url(${background.src})` }}
-      className="hero-overlay w-full bg-cover bg-center"
+      id="hero"
+      style={{
+        backgroundImage: `url(${background.src})`,
+        height: `calc(100% + ${headerHeight}px) + 64px`,
+      }}
+      className="hero-overlay w-full bg-cover bg-center md:!h-[600px]"
     >
-      <div className="container flex h-full flex-col justify-center gap-4 tracking-widest">
+      <div
+        className="container flex h-full flex-col gap-4 pb-6 tracking-widest"
+        style={{ paddingTop: headerHeight + 32 + 32 }}
+      >
         <h1 className="font-grotesk text-5xl text-white md:text-6xl">
           <span className="uppercase text-primary">Запишись</span> на перше
           <span className="uppercase text-primary"> безкоштовне</span>{" "}
