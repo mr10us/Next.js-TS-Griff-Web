@@ -4,12 +4,13 @@ import Link from "next/link";
 import background from "/public/background.png";
 import { Button } from "../ui/button";
 import { useHeaderHeight } from "../Header/Header.hooks";
+import { SectionLayout } from "../Layouts/SectionLayout";
 
 export const Hero = () => {
   const headerHeight = useHeaderHeight();
 
   return (
-    <section
+    <SectionLayout
       id="hero"
       style={{
         backgroundImage: `url(${background.src})`,
@@ -33,6 +34,6 @@ export const Hero = () => {
           <Link href={"#"}>РЕЄСТРАЦІЯ</Link>
         </Button>
       </div>
-    </section>
+    </SectionLayout>
   );
 };

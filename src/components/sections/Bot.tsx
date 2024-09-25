@@ -1,9 +1,10 @@
 import { BotSlider } from "../BotSlider/BotSlider";
+import { SectionLayout } from "../Layouts/SectionLayout";
 import { PageTitle } from "../PageTitle";
 
 export const Bot = () => {
   return (
-    <section
+    <SectionLayout
       id="bot"
       className="bg-gray-950 py-4 text-left text-white md:text-center"
     >
@@ -12,7 +13,7 @@ export const Bot = () => {
           ВІРТУАЛЬНИЙ ТРЕНЕР <span className="text-primary">GRIFF</span> В
           ТЕЛЕГРАМ
         </PageTitle>
-        <div className="flex flex-col gap-4 mt-10 tracking-widest">
+        <div className="mt-10 flex flex-col gap-4 tracking-widest">
           <p>
             Ми створили бот, який покроково дозволить вам створити рельєф тіла
             для певної мети.
@@ -35,6 +36,6 @@ export const Bot = () => {
       <div className="py-4">
         <BotSlider />
       </div>
-    </section>
+    </SectionLayout>
   );
 };
