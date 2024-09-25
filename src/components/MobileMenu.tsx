@@ -21,9 +21,9 @@ export const MobileMenu = () => {
       {/* <DrawerTrigger asChild> */}
       <MenuButton onClick={toggleDrawer} />
       {/* </DrawerTrigger> */}
-      <DrawerTitle className="invisible" />
-      <DrawerDescription className="invisible" />
       <DrawerContent className="fixed inset-0 m-0 h-full w-full rounded-none bg-gray-950 p-6 outline-none">
+        <DrawerTitle className="invisible" />
+        <DrawerDescription className="invisible" />
         <NavList />
         <Button
           variant="ghost"

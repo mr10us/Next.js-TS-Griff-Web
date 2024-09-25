@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute, Viewport } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -24,3 +24,10 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
   };
 }
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};

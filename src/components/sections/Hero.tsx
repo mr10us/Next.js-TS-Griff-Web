@@ -15,7 +15,7 @@ export const Hero = () => {
         backgroundImage: `url(${background.src})`,
         height: `calc(100% + ${headerHeight}px) + 64px`,
       }}
-      className="hero-overlay w-full bg-cover bg-center md:!h-[600px]"
+      className="hero-overlay w-full bg-cover bg-center"
     >
       <div
         className="container flex h-full flex-col gap-4 pb-6 tracking-widest"
