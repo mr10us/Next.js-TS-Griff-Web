@@ -31,7 +31,7 @@ export const Hero = () => {
           У найатмосфернішому клубі м.Суми.
         </h2>
         <Button asChild className="w-fit font-grotesk text-xl">
-          <Link href={"#"}>РЕЄСТРАЦІЯ</Link>
+          <Link href={"#signup"}>РЕЄСТРАЦІЯ</Link>
         </Button>
       </div>
     </SectionLayout>

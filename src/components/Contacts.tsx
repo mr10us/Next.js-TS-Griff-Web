@@ -1,7 +1,39 @@
 import callUsImage from "../../public/call-us.svg";
 import Image from "next/image";
 
-export const Contacts = () => {
+export const Contacts = ({
+  location = "header",
+}: {
+  location: "header" | "footer";
+}) => {
+  if (location === "footer") {
+    return (
+      <div className="flex flex-col gap-1 text-lg sm:text-xl">
+        <a
+          className="py-1 transition-colors hover:text-primary"
+          href="https://goo.gl/maps/rh6RFN5TiCzogKhD9"
+          target="_blank"
+        >
+          Україна, м. Суми, Пр.Перемоги, 30/3
+        </a>
+        <a
+          className="py-1 transition-colors hover:text-primary"
+          href="tel:0992705787"
+          target="_blank"
+        >
+          +38 099 270 57 87
+        </a>
+        <a
+          className="py-1 transition-colors hover:text-primary"
+          href="mailto:hello@trener.sumy.ua"
+          target="_blank"
+        >
+          hello@trener.sumy.ua
+        </a>
+      </div>
+    );
+  }
+
   return (
     <div className="contact-container">
       <a

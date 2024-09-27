@@ -1,6 +1,6 @@
 import { LegacyRef, useContext, useEffect, useState } from "react";
 import { HeaderRefContext } from "@/app/contexts/HeaderContext";
-import { throttle } from "../../../helpers/throttle";
+import { throttle } from "../../app/helpers/throttle";
 
 const THROTTLE_VALUE = 100;
 

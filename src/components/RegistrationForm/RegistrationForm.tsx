@@ -9,10 +9,8 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -48,7 +46,7 @@ export function RegistrationForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="mx-auto flex w-1/3 flex-col items-center justify-center gap-6"
+        className="mx-auto flex flex-col items-center justify-center gap-6 sm:w-1/2 lg:w-1/3"
       >
         <FormField
           control={form.control}
@@ -56,7 +54,11 @@ export function RegistrationForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input className="text-xl py-6 rounded-xl px-4" placeholder="Ваше ім&#39;я" {...field} />
+                <Input
+                  className="rounded-xl px-4 py-6 text-xl"
+                  placeholder="Ваше ім&#39;я"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -68,13 +70,19 @@ export function RegistrationForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input className="text-xl py-6 rounded-xl px-4" placeholder="Ваш email" {...field} />
+                <Input
+                  className="rounded-xl px-4 py-6 text-xl"
+                  placeholder="Ваш email"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button size="lg" className="text-xl" type="submit">Реєстрація</Button>
+        <Button size="lg" className="text-xl" type="submit">
+          Реєстрація
+        </Button>
       </form>
     </Form>
   );

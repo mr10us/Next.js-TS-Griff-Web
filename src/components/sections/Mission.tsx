@@ -9,8 +9,8 @@ export const Mission = () => {
     <SectionLayout id="mission" className="bg-dirt py-4">
       <div className="container mb-6">
         <PageTitle>Місія</PageTitle>
-        <div className="flex flex-col gap-6 md:flex-row md:justify-between">
-          <div className="flex flex-col gap-4 md:w-1/3">
+        <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
+          <div className="flex flex-col gap-4 lg:w-1/3">
             <p className="text-justify font-grotesk text-2xl tracking-wider text-white">
               Головна мета GRIFF — надати простір, де ви зможете створити тіло
               своєї мрії, знайти однодумців, або родину спортсменів, які будуть
@@ -31,7 +31,7 @@ export const Mission = () => {
             alt="mission icon"
             className="h-min self-center"
           />
-          <div className="hidden border-x-2 border-primary px-4 md:flex">
+          <div className="hidden border-x-2 border-primary px-4 lg:flex">
             <h2
               className="text-center font-grotesk text-5xl font-bold uppercase text-white"
               style={{ writingMode: "vertical-lr", textOrientation: "upright" }}

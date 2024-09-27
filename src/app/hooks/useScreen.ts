@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { throttle } from "../../../helpers/throttle";
+import { throttle } from "../helpers/throttle";
 
 type WindowSize = {
   width: number;

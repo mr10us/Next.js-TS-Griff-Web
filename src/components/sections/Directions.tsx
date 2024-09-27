@@ -5,7 +5,7 @@ import { PageTitle } from "../PageTitle";
 
 export const Directions = () => {
   return (
-    <SectionLayout id="directions" className="bg-gray-950">
+    <SectionLayout id="direction" className="bg-gray-950">
       <div className="container">
         <PageTitle>
           Напрямки клубу <Paint>GRIFF</Paint>

@@ -7,7 +7,7 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 export const Advantages = () => {
   return (
     <SectionLayout
-      id="advantages"
+      id="about"
       style={{ backgroundImage: `url(${gymImage.src})` }}
       className="advantages-overlay w-full bg-cover bg-center py-6"
     >

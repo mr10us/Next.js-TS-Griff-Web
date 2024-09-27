@@ -1,7 +1,7 @@
 import { RefObject, useEffect, useState } from "react";
-import { debounce } from "../../../helpers/debounce";
+import { debounce } from "../../app/helpers/debounce";
 import { TBreakpoint, TSliderReturnType } from "./Slider.d";
-import { throttle } from "../../../helpers/throttle";
+import { throttle } from "../../app/helpers/throttle";
 
 const SLIDER_DEBOUNCE = 100;
 const SLIDER_THROTTLE = 100;

@@ -32,7 +32,7 @@ export const Header = (): JSX.Element => {
         <NavList />
       </div>
       <div className="h-min my-auto">
-      <Contacts />
+      <Contacts location="header" />
       </div>
     </header>
   );

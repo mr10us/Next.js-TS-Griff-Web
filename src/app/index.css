@@ -18,6 +18,10 @@
   }
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 .hero-overlay {
   border-image: fill 1
     linear-gradient(hsl(0, 0%, 0%, 0.6), hsl(0, 0%, 0%, 0.6));
