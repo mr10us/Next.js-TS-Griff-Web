@@ -129,6 +129,8 @@ const config = {
           "linear-gradient(0deg, rgba(242,243,244,0) 0%, rgba(2,3,4,0.5) 100%);",
         "hero-baner":
           "linear-gradient(90deg, hsl(var(--secondary)) 0%, hsl(var(--dirt)) 100%);",
+        coach:
+          "linear-gradient(0deg, rgba(114,34,62,1) 0%, rgba(4,6,19,1) 35%, rgba(4,6,19,1) 65%, rgba(114,34,62,1) 100%);",
       },
     },
   },

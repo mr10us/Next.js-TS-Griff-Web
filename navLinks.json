@@ -1,26 +1,26 @@
 [
   {
     "title": "Про клуб",
-    "url": "#about"
+    "url": "/#about"
   },
   {
     "title": "Фітнес бот",
-    "url": "#bot"
+    "url": "/#bot"
   },
   {
     "title": "Тренери",
-    "url": "#coaches"
+    "url": "/#coaches"
   },
   {
     "title": "Місія",
-    "url": "#mission"
+    "url": "/#mission"
   },
   {
     "title": "Фітнес напрямки",
-    "url": "#direction"
+    "url": "/#direction"
   },
   {
     "title": "Реєстрація",
-    "url": "#signup"
+    "url": "/#signup"
   }
 ]

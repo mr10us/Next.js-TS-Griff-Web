@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "image": "/ruslan.jpeg",
+    "title": "Персональний тренер",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat autem impedit ipsa esse sequi. Molestiae pariatur aperiam ratione eos?"
+  },
+  {
+    "id": 1,
+    "image": "/ruslan.jpeg",
+    "title": "Персональний тренер",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat autem impedit ipsa esse sequi. Molestiae pariatur aperiam ratione eos?"
+  },
+  {
+    "id": 2,
+    "image": "/ruslan.jpeg",
+    "title": "Персональний тренер",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat autem impedit ipsa esse sequi. Molestiae pariatur aperiam ratione eos?"
+  },
+  {
+    "id": 3,
+    "image": "/ruslan.jpeg",
+    "title": "Персональний тренер",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat autem impedit ipsa esse sequi. Molestiae pariatur aperiam ratione eos?"
+  },
+  {
+    "id": 4,
+    "image": "/ruslan.jpeg",
+    "title": "Персональний тренер",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat autem impedit ipsa esse sequi. Molestiae pariatur aperiam ratione eos?"
+  }
+]
