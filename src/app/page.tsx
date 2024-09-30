@@ -12,21 +12,19 @@ import { Registrartion } from "@/components/sections/Registrartion";
 
 export default function Home() {
   return (
-    <>
-      <HeaderRefProvider>
-        <Header />
-        <main>
-          <Hero />
-          <HeroBanner />
-          <Bot />
-          <Advantages />
-          <Coaches />
-          <Mission />
-          <Directions />
-          <Registrartion />
-        </main>
-        <Footer />
-      </HeaderRefProvider>
-    </>
+    <HeaderRefProvider>
+      <Header />
+      <main>
+        <Hero />
+        <HeroBanner />
+        <Bot />
+        <Advantages />
+        <Coaches />
+        <Mission />
+        <Directions />
+        <Registrartion />
+      </main>
+      <Footer />
+    </HeaderRefProvider>
   );
 }

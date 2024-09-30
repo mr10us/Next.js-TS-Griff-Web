@@ -6,7 +6,7 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 
 export const Mission = () => {
   return (
-    <SectionLayout id="mission" className="bg-dirt py-4">
+    <SectionLayout id="mission" className="bg-dirt">
       <div className="container mb-6">
         <PageTitle>Місія</PageTitle>
         <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">

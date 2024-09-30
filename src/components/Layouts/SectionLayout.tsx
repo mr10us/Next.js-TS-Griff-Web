@@ -21,7 +21,7 @@ export const SectionLayout = ({
   id?: string;
 }): JSX.Element => {
   return (
-    <section id={id} className={cn("py-6 md:py-12", className)} {...props}>
+    <section id={id} className={cn("py-12", className)} {...props}>
       {children}
     </section>
   );

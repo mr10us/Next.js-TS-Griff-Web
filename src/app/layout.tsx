@@ -32,14 +32,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body className={cn(ubuntu.className, groteskDemi.variable, "tracking-wider")}>
         {children}
         <Toaster />
+        {modal}
       </body>
     </html>
   );

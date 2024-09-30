@@ -18,17 +18,25 @@
   }
 }
 
-html, body {
+html,
+body {
+  overscroll-behavior: none;
   scroll-behavior: smooth;
+  background-color: hsl(var(--secondary));
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .hero-overlay {
-  border-image: fill 1
-    linear-gradient(hsl(0, 0%, 0%, 0.6), hsl(0, 0%, 0%, 0.6));
+  border-image: fill 1 linear-gradient(hsl(0, 0%, 0%, 0.6), hsl(0, 0%, 0%, 0.6));
 }
 .advantages-overlay {
   border-image: fill 1
-    linear-gradient( hsla(342, 48%, 22%, 0.7), hsla(342, 48%, 22%, 0.7));
+    linear-gradient(hsla(342, 48%, 22%, 0.7), hsla(342, 48%, 22%, 0.7));
 }
 .registration-overlay {
   border-image: fill 1
@@ -58,4 +66,42 @@ html, body {
 .slider-container::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.coach-image {
+  position: relative;
+  z-index: 1;
+}
+.coach-image > img {
+  border-bottom-left-radius: 40rem;
+  border-bottom-right-radius: 40rem;
+}
+
+.coach-image::before {
+  position: absolute;
+  content: "";
+  inset: -40px -20px -20px -20px;
+  background-color: hsl(var(--primary));
+  border-radius: 15% 85% 70% 30% / 30% 64% 36% 70%;
+  z-index: -1;
+}
+
+
+#skew {
+  position: relative;
+}
+#skew::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: black;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+
+@media screen and (width < 480px) {
+  footer > div > div {
+    width: 100%;
+  }
 }

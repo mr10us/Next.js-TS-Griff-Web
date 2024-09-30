@@ -9,7 +9,7 @@ export const Advantages = () => {
     <SectionLayout
       id="about"
       style={{ backgroundImage: `url(${gymImage.src})` }}
-      className="advantages-overlay w-full bg-cover bg-center py-6"
+      className="advantages-overlay w-full bg-cover bg-center"
     >
       <div className="container">
         <PageTitle>

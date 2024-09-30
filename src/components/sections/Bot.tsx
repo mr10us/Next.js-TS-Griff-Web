@@ -6,14 +6,14 @@ export const Bot = () => {
   return (
     <SectionLayout
       id="bot"
-      className="bg-gray-950 py-4 text-left text-white md:text-center"
+      className="bg-gray-950 text-left text-white md:text-center"
     >
       <div className="container">
         <PageTitle>
           ВІРТУАЛЬНИЙ ТРЕНЕР <span className="text-primary">GRIFF</span> В
           ТЕЛЕГРАМ
         </PageTitle>
-        <div className="mt-10 flex flex-col gap-4 tracking-widest">
+        <div className="flex flex-col gap-4 tracking-widest">
           <p>
             Ми створили бот, який покроково дозволить вам створити рельєф тіла
             для певної мети.

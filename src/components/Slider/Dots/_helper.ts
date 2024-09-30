@@ -24,7 +24,7 @@ export const renderDots = (
 
   return createElement(
     "div",
-    { className: "dots flex items-center justify-center gap-4 py-6" },
+    { className: "dots flex flex-wrap items-center justify-center gap-4 py-6" },
     dots,
   );
 };

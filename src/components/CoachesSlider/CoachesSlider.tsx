@@ -1,32 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { Slider } from "../Slider";
-import ruslan from "../../../public/ruslan.jpeg";
+import coaches from "../../../coaches.json";
 import { TCoachesSliderItemProps } from ".";
+import { CoachSliderItem } from "./CoachSliderItem";
 
-const slides = [
-  {
-    image: ruslan,
-    title: "Персональний тренер",
-  },
-  {
-    image: ruslan,
-    title: "Персональний тренер",
-  },
-  {
-    image: ruslan,
-    title: "Персональний тренер",
-  },
-  {
-    image: ruslan,
-    title: "Персональний тренер",
-  },
-  {
-    image: ruslan,
-    title: "Персональний тренер",
-  },
-];
+const slides: TCoachesSliderItemProps[] = coaches
 
 export const CoachesSlider = () => {
   return (
@@ -43,18 +22,9 @@ export const CoachesSlider = () => {
     >
       {slides.map((slide, index) => (
         <Slider.Item key={slide.title + index}>
-          <CoachesSliderItem image={slide.image} title={slide.title} />
+          <CoachSliderItem {...slide} />
         </Slider.Item>
       ))}
     </Slider>
-  );
-};
-
-const CoachesSliderItem = ({ image, title }: TCoachesSliderItemProps) => {
-  return (
-    <div className="flex flex-col gap-4 font-grotesk text-3xl text-white uppercase items-center">
-      <Image src={image} alt={title} />
-      <p>{title}</p>
-    </div>
   );
 };
