@@ -1,8 +1,8 @@
 import { memo, useContext } from "react";
-import { SliderContext } from "../Slider";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import targetImage from "../../../../public/icon-target.svg";
+import { SliderContext } from "../SliderContextProvider";
 
 export const SliderDot = memo(
   ({

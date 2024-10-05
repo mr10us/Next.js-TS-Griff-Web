@@ -1,8 +1,8 @@
 import Image from "next/image";
 import arrowIcon from "../../../../public/left.svg";
-import { SliderContext } from "../Slider";
 import { useContext } from "react";
 import { cn } from "@/lib/utils";
+import { SliderContext } from "../SliderContextProvider";
 
 export const Nav = (props: React.ComponentPropsWithoutRef<"div">) => {
   return (
