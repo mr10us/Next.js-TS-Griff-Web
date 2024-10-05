@@ -12,3 +12,47 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Coach {
+  id         Int     @id @default(autoincrement())
+  image      String
+  title      String
+  content    String
+  name       String
+  position   String?
+  experience Int?
+  phone      String?
+  email      String?
+  instagram  String?
+
+  createdAt DateTime @default(now())
+  editedAt  DateTime @updatedAt
+}
+
+model Direction {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  image       String
+  schedule    String
+
+  createdAt DateTime @default(now())
+  editedAt  DateTime @updatedAt
+}
+
+model Opportunities {
+  id      Int    @id @default(autoincrement())
+  content String @db.VarChar(255)
+
+  createdAt DateTime @default(now())
+  editedAt  DateTime @updatedAt
+}
+
+model Schedule {
+  id   Int    @id @default(autoincrement())
+  days String
+  time String
+
+  createdAt DateTime @default(now())
+  editedAt  DateTime @updatedAt
+}

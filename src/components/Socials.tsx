@@ -6,9 +6,8 @@ import Link from "next/link";
 
 export const Socials = () => {
   return (
-    <div className="flex gap-6 justify-between sm:justify-normal text-lg sm:text-xl">
+    <div className="flex h-fit justify-between gap-6 text-lg sm:justify-normal sm:text-xl">
       <Link
-        className="hover:fill-primary"
         href="https://www.instagram.com/griff_sportclub/"
         target="_blank"
       >

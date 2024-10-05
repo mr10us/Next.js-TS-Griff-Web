@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  createContext,
   forwardRef,
   memo,
   ReactNode,
@@ -9,14 +8,11 @@ import {
   useRef,
 } from "react";
 import { useSlider } from "./Slider.hooks";
-import { type TBreakpoint, type TSliderReturnType } from "./Slider.d";
+import { type TBreakpoint } from "./Slider.d";
 import { cn } from "@/lib/utils";
 import { calculateSlideToShow, renderDots } from "./Dots/_helper";
 import { Nav } from "./Nav";
-
-export const SliderContext = createContext<TSliderReturnType>(
-  {} as TSliderReturnType,
-);
+import { SliderContext, SliderContextProvider } from "./SliderContextProvider";
 
 const Slider = ({
   children,
@@ -45,7 +41,7 @@ const Slider = ({
   if (!children) return null;
 
   return (
-    <SliderContext.Provider value={sliderContextValue}>
+    <SliderContextProvider value={sliderContextValue}>
       <div
         className={`slider-container grid snap-x snap-mandatory grid-flow-col gap-6 overflow-x-scroll overscroll-x-contain scroll-smooth`}
         style={{
@@ -60,7 +56,7 @@ const Slider = ({
       {dots
         ? renderDots(slidesCount, sliderOptions.currentSlide, breakpointSlides)
         : null}
-    </SliderContext.Provider>
+    </SliderContextProvider>
   );
 };
 

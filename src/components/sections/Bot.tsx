@@ -13,7 +13,7 @@ export const Bot = () => {
           ВІРТУАЛЬНИЙ ТРЕНЕР <span className="text-primary">GRIFF</span> В
           ТЕЛЕГРАМ
         </PageTitle>
-        <div className="flex flex-col gap-4 tracking-widest">
+        <div className="flex flex-col gap-2 text-lg tracking-widest md:gap-4">
           <p>
             Ми створили бот, який покроково дозволить вам створити рельєф тіла
             для певної мети.
